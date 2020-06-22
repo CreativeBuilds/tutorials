@@ -1,0 +1,15 @@
+body {
+	/* 
+    body corresponds to the <body> tag in the html file and 
+    will affect the content inside of the tags the way we describe 
+  */
+
+	/* Colors are described in either hex, which is 0-9a-f, or rgba "Red green blue alpha/opacity"  */
+	background-color: #000000;
+
+	/* 
+    Here is an example of how white would be represented in rgb/rgba, 
+    the range for rgb is 0-255 and the range for a or alpha is 0-1 
+  */
+	color: rgba(255, 255, 255, 1);
+}
