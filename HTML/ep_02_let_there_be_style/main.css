@@ -1,0 +1,15 @@
+body {
+	/* First lets change the background to a lighter color "  */
+	background-color: #faf4e1;
+
+	/* 
+    Comment out this as we wont need it for now.
+  */
+	/* color: rgba(255, 255, 255, 1); */
+}
+
+/* "#" represents id where as "." represents a class */
+#title {
+	/* Lets use rgb as I find it easier to visualize how the color is suppose to change */
+	color: rgb(129, 82, 149);
+}
