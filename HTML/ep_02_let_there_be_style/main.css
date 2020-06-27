@@ -12,4 +12,12 @@ body {
 #title {
 	/* Lets use rgb as I find it easier to visualize how the color is suppose to change */
 	color: rgb(129, 82, 149);
+
+	/* Moving the content sideways by "pushing" itself from the top */
+	margin-left: 100px;
+	/* margin-left: -100px */ /* You can also use negative values and move the other way */
+
+	/* Moving the content down by "pushing" itself from the top */
+	margin-top: 100px;
+	/* margin-top: -100px */ /* You can also use negative values and move the other way */
 }
