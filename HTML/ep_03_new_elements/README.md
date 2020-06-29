@@ -16,4 +16,7 @@ Episode Overview / Main points
 
   - In order to center our content we need to first "wrap" what we have. Take the title and the image and put inside the div, explain the div's comment and expand on it if you feel like its needed.
   - after adding the class swap to `main.css` and explain the different comments within the .centered
-  
+- Outro
+  - Sum up what we did
+  - Next episode will be about user interactions!
+  - Feel free to research buttons and other elements ahead of next episode and then check back in for a progress review!
