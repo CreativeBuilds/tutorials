@@ -11,3 +11,5 @@ Episode Overview / Main points
   point. 
 - using the margin-left: 100px I will show the text moving to the right. Some people may find that confusing at fist but I will use the inspector and it will highlight the margined area visualizing the invisible move over.
 - Do the same with margin-top: 100px
+
+Task for next episode try and research a way to center the content on your screen. It may be difficult and if you don't figure it out, don't worry we'll cover in the next episode.
