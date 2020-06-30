@@ -1,0 +1,114 @@
+Hello World!
+
+Welcome to another episode of WebDev 101 for beginners and I'm your host, CreativeBuillds.
+
+In the last video, we covered all the basic concepts we need to know before starting any web development.
+
+Now it’s time for the real stuff.
+
+But first, here are a couple of things we need to discuss.
+
+In HTML, we make use of things called “tags.”
+
+HTML tags are the keywords used in a web page that define how your web browser must format and display the content.
+
+Think of these tags as the corners or posts in your house which makes the basis for how it should be shaped.
+
+Most tags must have two parts, an opening and a closing part. 
+
+For example, <html> is the opening tag and </html> is the closing tag. 
+
+Note that the closing tag has the same text as the opening tag, but has an additional forward-slash ( / ) character. 
+
+Finally, let’s get to coding.
+
+Before anything else, you’ll want to pick out a good IDE that’s up to your tastes
+
+We have to start the whole thing with an <HTML> tag. This tag defines the whole document as an HTML file.
+
+Next, we insert the <head> tag. 
+
+This contains any code that is not used to display elements on the webpage. Which means that this area is considered as a storage area for metadata, not visual content.
+
+Then we insert the <link> tag. This tag is used as a link to the external style sheets.
+
+We write the tag like this because it contains attributes which reference our main CSS file.
+
+<link rel="stylesheet" href="./main.css"/> 
+
+We’ll elaborate on this part later.
+Now we’re done with the head section of our code. Don't forget to close it. </head>
+We write the tag like this because it contains attributes which reference our main CSS file.
+
+It’s time to start on the body. Use this opening tag <body> to indicate the beginning of the section.
+
+The body is where the content of the document is placed.
+
+This includes any visual content like text, images, or videos.
+
+Here’s where we can input a heading.
+
+The <h1> to <h6> tags are used to define HTML headings.
+
+<h1> produces the biggest text indicating the most important heading. 
+
+<h6> produces the smallest text suitable for a heading and indicates the least important one.
+
+So for this document, let’s use H1.
+
+Start with the opening tag <h1> and insert the text that you want to be displayed on your heading.
+
+In this case, let’s put in the words “Hello World!”
+
+Fun fact: the words “Hello World” came from the book ”C Programming Language” written by Brian Kernighan.
+
+He was asked why he came up with those words and he answered that he wasn’t really sure and all he remembers is that he had seen a cartoon that showed an egg and a chick and the chick was saying, “Hello, World.”
+
+Back to our code, don’t forget to put the closing tag on the heading.
+
+We’re not putting anything else into the code yet so let’s close the body part of our script with </body>
+
+For now, that’s it for our HTML file.
+
+Put the closing tag </html> and let’s move on to our linked stylesheet.
+
+Since we’re through with HTML, the structure of our house, it’s time to splash some paint on with CSS.
+
+
+We start with indicating the word body to indicate where this part of the script is applicable.
+
+Then we put an opening curly bracket to enclose the area where your script is entered.
+
+The body corresponds to the <body> tag in the html file and will affect the content inside of the tags the way we describe it here in the CSS file.
+
+To give you a clear image, let's put background-color to define the color of the body’s background.
+
+Colors can be described in either hex, which is 0-9 and a-f, or rgba "Red green blue alpha/opacity.
+
+For this webpage, we will be setting the background to black by simply typing in #000000
+
+This is how it is represented in hex.
+
+Then we set the text color to white.
+
+In rgba, this is how you do it.
+
+color: rgba(255, 255, 255, 1)
+
+Always remember to put a semicolon when you end a line of code, otherwise, it wouldn’t be applied in the output and may cause some errors for your page.
+
+Let’s stop there for now in our CSS script.
+
+Add a closing curly bracket, aaaand there you go.
+
+Alright, let’s see what we came up with.
+
+Here is how the site looks with our present script.
+
+And that’s it for today!
+
+In the next episode of Webdev 101, we’ll continue building our website and we’ll be talking more about adding images and making a more stylized website.
+
+Get ready for a more in-depth CSS tutorial!
+We hope you enjoyed and learned from this video. Stay tuned for more and don’t forget to join our community by subscribing.
+Until the next episode - keep learning, keep coding!
