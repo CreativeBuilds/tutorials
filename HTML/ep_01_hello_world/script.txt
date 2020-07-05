@@ -1,30 +1,24 @@
 Hello World!
 
-Welcome to another episode of WebDev 101 for beginners and I'm your host, CreativeBuillds.
+Welcome to another episode of Into to Web Dev 101 I'm your host, CreativeBuilds.
 
 In the last video, we covered all the basic concepts we need to know before starting any web development.
 
 Now it’s time for the real stuff.
 
-But first, here are a couple of things we need to discuss.
-
 In HTML, we make use of things called “tags.”
 
 HTML tags are the keywords used in a web page that define how your web browser must format and display the content.
 
-Think of these tags as the corners or posts in your house which makes the basis for how it should be shaped.
-
-Most tags must have two parts, an opening and a closing part. 
-
-For example, <html> is the opening tag and </html> is the closing tag. 
-
-Note that the closing tag has the same text as the opening tag, but has an additional forward-slash ( / ) character. 
-
-Finally, let’s get to coding.
+Think of these tags as the 2x4's in your house which makes the basis for how it should be shaped.
 
 Before anything else, you’ll want to pick out a good IDE that’s up to your tastes
 
 We have to start the whole thing with an <HTML> tag. This tag defines the whole document as an HTML file.
+
+Most tags must have two parts, an opening and a closing part. 
+
+For example, <html> is the opening tag and </html> is the closing tag. 
 
 Next, we insert the <head> tag. 
 
@@ -38,7 +32,6 @@ We write the tag like this because it contains attributes which reference our ma
 
 We’ll elaborate on this part later.
 Now we’re done with the head section of our code. Don't forget to close it. </head>
-We write the tag like this because it contains attributes which reference our main CSS file.
 
 It’s time to start on the body. Use this opening tag <body> to indicate the beginning of the section.
 
@@ -76,8 +69,6 @@ Since we’re through with HTML, the structure of our house, it’s time to spla
 
 
 We start with indicating the word body to indicate where this part of the script is applicable.
-
-Then we put an opening curly bracket to enclose the area where your script is entered.
 
 The body corresponds to the <body> tag in the html file and will affect the content inside of the tags the way we describe it here in the CSS file.
 
