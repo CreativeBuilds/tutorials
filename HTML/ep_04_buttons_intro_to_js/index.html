@@ -1,37 +1,24 @@
-<html> <!-- HTML is the "root" or start of the page-->
+<html>
   <head>
-    <!-- 
-    Head is a storage area for metadata, not visual content 
-    Load css or set different tags for SEO
-    -->
     <link rel="stylesheet" href="./main.css" /> 
-    <!--
-      Link is used to import the css or "stylesheets"
-    -->
   </head>
   <body>
-    <!--
-      <body> is where the content of the document is
-      this includes any visual content like text, images, or videos
-    -->
     <div class="center">
-      <!-- NEW 
-      <div> is like a box, a box can be any shape or size and houses content (other tags) inside of it
-        by default it wont really change the look of our site at all.
-
-        class="center" tells the browser to apply any css that matches the class of "center" to this div
-      -->
-      <h1 id="title">Web Development 101</h1>
-      <!--
-        <h1> is a "title", use this to indicate something of importance
-          or to grab someones attention quickly
-      -->
-      <p>Hosted by CreativeBuilds</p>
-      <img id="logo" src="./logo.png" alt="CreativeBuild's Logo" />
-      <!--
-        <img /> is a "image", use this to display png, gif, or jpeg link to complete list:
-        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
-      -->
+      <h1 id="title">User Interactions</h1>
+      <!-- Buttons are a main way of letting a user interact with your website -->
+      <!-- Here we're using onclick to trigger the function 'run_hello_world' -->
+      <button onclick="run_hello_world()">Click me!</button>
     </div>
+    <!-- script tags are used to tell the browser where your javascript files are at -->
+    <!-- in this case we link to a new file, main.js -->
+    <script src="./main.js"></script>
+    <!-- We can also use inline scripts -->
+    <script>
+      function run_inline_hello_world(){
+        console.log("Hello World")
+      }
+    </script>
+    <!-- Most of the time we never do this, and is mostly there for ease of access 
+          if you just need to test something fast but its good to know that it exists -->
   </body>
-</html> <!-- This tag represents the end of the script-->
+</html>
