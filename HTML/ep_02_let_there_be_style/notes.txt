@@ -1,0 +1,37 @@
+Alright, I've gone ahead and opened up our web page in Brave.
+
+First thing you'll notice is that the position of the text has changed, and this is because of the margin we added.
+
+If you're using brave, press ctrl + shift + i to open up the console.
+
+Click on this elements tab in order to view the html live.
+
+If we press ctrl + shift + c or click this button up here that looks like a cursor in a box, then we can select an element.
+
+As you move your cursor along the page, you'll see that the page changes colors. 
+
+This is the element you currently are selected, it may have a tool tip like the one our title here that gives some extra information.
+
+You can see the width and height, color, font, margin and more.
+
+Now notice the orange area around the blue area.
+
+The blue area is considered the actual element where it's content resides.
+
+The orange is the margin. Keen eyes will have picked up that we only added margin on two sides but now theres margin on three sides.
+
+That's because some HTML elements will have css added to them by default. 
+
+If you want to get rid of it, you can over-ride the original css by adding your own!
+
+But lets say that you want to edit this page, without having to go through the hassel of editing your file just to test some new css.
+
+Luckily for us, we can edit the css within these panels here and even toggle on and off certain properties all together.
+
+Mess around and remember to just have fun!
+
+That's it for this episode of Intro to web development.
+
+Thank you for watching!
+
+New episodes come out monday and wednesday at 8PM Eastern Standard Time.

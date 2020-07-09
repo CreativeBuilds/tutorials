@@ -17,6 +17,12 @@ body {
 	border-radius: 50% 50% / 50% 50%;
 }
 
+p {
+	color: rgb(129, 82, 149);
+	font-weight: bold; /* Increase the thickness of the font (also reffered to as text) */
+	margin-top: 0px; /* remove built in margin from the p element */
+}
+
 /* You can see here we use "." for .center as "center" is a class not an id like "#logo" */
 .center {
 	width: 100vw;
@@ -42,10 +48,4 @@ body {
 
 	flex-direction: column;
 	/* Changes the main direction of the display (row by default) */
-}
-
-p {
-	color: rgb(129, 82, 149);
-	font-weight: bold; /* Increase the thickness of the font (also reffered to as text) */
-	margin-top: 0px; /* remove built in margin from the p element */
 }

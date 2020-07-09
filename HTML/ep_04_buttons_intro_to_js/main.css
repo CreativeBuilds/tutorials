@@ -1,12 +1,9 @@
 body {
-	/* First lets change the background to a lighter color "  */
 	background-color: #faf4e1;
 	overflow: hidden; /* Remove scrollbars from the body tag */
 }
 
-/* "#" represents id where as "." represents a class */
 #title {
-	/* Lets use rgb as I find it easier to visualize how the color is suppose to change */
 	color: rgb(129, 82, 149);
 	margin-bottom: 10px;
 }
@@ -17,35 +14,18 @@ body {
 	border-radius: 50% 50% / 50% 50%;
 }
 
-/* You can see here we use "." for .center as "center" is a class not an id like "#logo" */
 .center {
 	width: 100vw;
-	/* 
-	vw is "viewport width" and is the width in pixels of the users screen 
-	therefore this will make center expand all the way across the screen horizontally
-	*/
 	height: 100vh;
-	/*
-	Here we do the same thing with vh or "viewport height" and make any tag with the class of
-	"center" take up the full view of the screen.
-	*/
+
 	display: flex;
-	/* display is like altering how a html node or tag works, flex is useful for a number of different
-	things, including centering content*/
-
 	justify-content: center;
-	/* Aligns items along the main direction (default is horizontal) 
-	of the current line of the flex container. */
-
 	align-items: center;
-	/* Aligns items along the opposite direction of justify-content (default is vertical) */
-
 	flex-direction: column;
-	/* Changes the main direction of the display (row by default) */
 }
 
 p {
 	color: rgb(129, 82, 149);
-	font-weight: bold; /* Increase the thickness of the font (also reffered to as text) */
-	margin-top: 0px; /* remove built in margin from the p element */
+	font-weight: bold;
+	margin-top: 0px;
 }
