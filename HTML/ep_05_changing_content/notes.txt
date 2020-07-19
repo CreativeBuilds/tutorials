@@ -1,0 +1,121 @@
+Hey guys, what’s going on?
+
+Welcome back to another episode of Intro to Web Development. I'm your host, CreativeBuillds.
+
+In the last episode, we went on to create our main.js file and worked on adding a button to visualize how user interactions would work.
+
+Now in this episode, we’re going to be building on top of our previous progress and we’ll be manipulating the DOM.
+
+DOM stands for Document Object Model. In the world of web, all HTML web pages are referred to as documents. 
+
+The DOM represents each of these web pages in a tree-like structure to make it easier to access and manage the elements.
+
+It also contains a bunch of nodes where each node represents an HTML element. 
+
+The <HTML> tag always comes at the top and hence is called the “root node”. 
+
+The rest of the nodes come under it and hence are called “children nodes”. 
+
+But enough of that for now. Let’s move on to our code.
+
+
+=== getting_started_1
+
+To start off, we’ll be adding some text which is pretty simple, but this will allow us to bring in some new concepts to think about and play with.
+
+First, we head on to our HTML file and look for the h1 tag.
+
+*start adding <p> with id of "clicktext"*
+
+Add a new p tag in between the h1 and button tags and add an ID of "clicktext"
+
+The inside of this tag will be empty for now, but we’ll be adding text with JavaScript next.
+
+*change onclick to get_text*
+
+Change the function name in the onclick attribute to get_text()
+
+*swap to main.js and make a new function*
+
+Then we swap over to our main.js file and we'll create that new function here with the same name, get_text.
+
+=== p_tag
+
+Put in your curly brackets and now type in let p_tag = document.getElementById put in your parenthese and pass in the variable clicktext to the getElementById function.
+
+Here we are accessing a global variable document and call a function within it, then we store the value ti returns in the variable p_tag.
+
+A global variable is just a variable that all web pages have and it's a value that's built into the browser itself, not something you have to add.
+
+You can store values in variables by either using the keyword let or var.
+
+There’s also const which stands for constant, or a variable you can't change later on, but that's used for specific use cases. Here I'm just using *let*, simply out of preference.
+
+=== inner_text_1
+
+Now we are setting the inner text of the p_tag, just like we would if we typed this text in between the tags in the html file.
+
+So go ahead and put p_tag.innerText = and then a string, so single quotes or double quotes, your name, and ", just clicked a button!".
+
+Updating HTML values this way is extremely useful for dynamic information that's stored in the backend.
+
+For instance, a user's name can be updated in real time without needing to reload the page at all.
+
+That is a bit advanced for now though.
+
+Swap over to your browser and let's load up the webpage.
+
+=== webpage_1
+
+We can see the button here so let’s try clicking on it and see what happens.
+
+If the text does appear, then congratulations, your script seems to be working perfectly so far.
+
+If not, try checking in the console by pressing ctrl + shift + i for errors.
+
+=== adding_color_1
+
+Back to our javascript file, let’s work on something a bit more advanced. For example, changing the colors of the text randomly every time we click the button.
+
+To do this we can use a random number generator to generate our colors on the fly.
+
+I've gone ahead and prepared this random function, you don't need to know exactly what it does if you can't tell by looking at it.
+
+Essentially it just takes two values, the first is the minimum value, and the second is the maximum value. 
+
+If you need to, pause the video for a second and copy it down. Once you have down, go ahead and generate your first number like so.
+
+"Let red equals random and then parenthese 0 comma 255"
+
+copy and paste that three times, and change the variable name to red green and blue respectively.
+ 
+This lets us generate 3 random numbers, one for each value of rgb.
+
+Then we input those colors into a string like so.
+
+- - - let new_color = `rgb(${red},${green},${blue})`; - - -
+
+Here we used a string, specifically we're using a template string which is denoted using backticks instead of quotes, it allows us to change a string by using the variables we made. 
+
+In this case we pass in the 3 variables for each color right where they would go if we were writting css.
+     
+Simply set the color of the text to the new_color variable by typing p_tag.style.color = new_color;
+
+This allows us to access the style on our html node. The style variable gives access to pretty much every variable that we can find in a css file.
+
+Then we save all our changes and head back on over to the browser.
+
+=== wrap_up_1
+
+When you click on the button now, you should that every click generates a new color!
+
+So to wrap everything up, we got to learn how to start modifying the content in our website through the use of manipulating the DOM and CSS with JavaScript.
+
+We also learned that the DOM stands for Document Object Model and is a tree-like structure with each branch being an html node, some being children of others.
+
+That’s it for today and I hope you enjoyed and learned from this video. 
+
+Stay tuned for more and don’t forget to join our community by subscribing or joining the Discord link down below.
+And until the next episode - keep learning, keep coding!
+New tutorials come out at 8pm Eastern Standard Time, Monday and Wednesday. With Devlogs, same time on Friday.
+

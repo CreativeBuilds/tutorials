@@ -1,0 +1,116 @@
+Hey guys, what’s going on?
+
+Welcome back to another episode of Intro to Web Development. I'm your host, CreativeBuillds.
+
+Last episode, we covered adding images to the webpage and adjusting the sizes. We also talked about formatting the content by means of making use of divs.
+
+This time, we’ll be taking it up a notch as we start implementing javascript in order to make way for user interactions.
+
+You see, there are two kinds of web pages - static and dynamic.
+
+Static web pages are ones that are fixed and display the same content for every user. It can simply be made using only HTML and CSS.
+
+A dynamic website, on the other hand, is one that can display different content and provide user interaction. 
+
+As you can tell from the progress we’ve made so far, static websites are easier to build, while dynamic websites require a bit more work.
+
+Let’s get started.
+
+===
+
+*REMOVE p tag and img from site*
+
+First thing we need to do is to remove all our unneeded code from the last episode.
+
+*CHANGE title to user interactions*
+
+We’ll also be changing the title to User Interactions.
+
+Now we can go on and add a button here just below the h1 tag.
+
+Buttons are one of the main ways users can interact with your website.
+
+Starting off, let’s type in <button>Click me!</button> to indicate to the browser that this is a button.
+
+Now if you click this, it would look like the button is working but we still need to make it interactive.
+
+So to make the button interactive, we should implement an onclick attribute.
+
+Type in onclick="run_hello_world()". Dont forget to add parentheses, and where the spaces would be lets put underscores.
+
+
+Here we're using onclick to trigger the function 'run_hello_world'
+
+===
+
+Run hello world is a function in javascript that we still have to make in our main.js file. The .js means its a javascript file, you may come across a .ts file in the future and that's for TypeScript, a more advanced version of JavaScript that we'll get to in a future series.
+
+After you've made the file we need to add the HTML Script tag to import it into our website.
+
+Script tags are used to tell the browser where your javascript files are at. In this case we link to the new file, main.js
+
+
+*Wait for audio queue to write code*
+
+To do this, put in <script src="./main.js"></script>
+
+Now let’s swap over to our main.js file and work on that.
+
+*swap to main.js file*
+
+First we add the keyword, function, and the name we used in the HTML file, in this case "run_hello_world()"
+
+Don't forget the parentheses and then add curly brackets.
+
+If we had any input variables, they would go inside of the parentheses since we dont, we can leave those be.
+
+The curly brackets contain the code that should be run whenever this function is called.
+
+Currently we're calling this function bymeans of that onclick attribute back on the button in the html file.
+
+Remeber, if you put anything outside of the curly brackets it wont be apart of your function and will most likely cause errors.
+
+For now let's do a basic console.log("Hello World")
+
+Here we're accessing something called "The Console" and then we run a function called log. 
+
+It lets you see any variables you pass into the log function and in this case we're using a string.
+
+The browser can read it as a string since it is denoted by using either single quotes or double quotes.
+
+The console.log function is going to be your bread and butter. It allows you to see the inner workings of your script.
+
+Now let’s head on to the browser and check out our click me button.
+
+Load up the webpage, and open the console by pressing ctrl + shift + i and hitting the console tab.
+
+As soon as you press the button, you should see "Hello world" in the console. 
+
+If you see a red error, read what it says and it will most likely tell you what's going wrong with your code. 
+
+If you're not sure, leave a comment in the description for help.
+
+
+There are also other ways of using JavaScript and one of these is inline scripting which can be done in HTML.
+
+Inline scripting does not link to an external javascript file because you put all the javascript inside the tags like how you would put text in a paragraph tag.
+
+*copy main.js function and swap to index.html file*
+
+Paste what you had in the other file here and we'll add the text inline_ to the front of the function name here.
+
+*change log, and change the call function in the attribute*
+
+Change the console log to "Hello from Inline", make sure to update the onclick attribute to use the new function, load it up and you'll see the new function getting called just like it was in the main.js file.
+
+So to wrap it all up, this episode was all about introducing you to user interactions and how to handle them with javascript.
+
+Right now, we don't have the page changing at all and we're just outputting some text, but in next weeks episode we'll start being able to edit HTML with javascript!
+
+That’s it for today and I hope you enjoyed and learned from this video. 
+
+Stay tuned for more and don’t forget to join our community by subscribing or joining the Discord link below.
+Until the next episode - keep learning, keep coding!
+New tutorials come out at 8pm Eastern Standard Time, Monday and Wednesday. With Devlogs same time on Friday.
+
+After you've made the file we need to add the HTML script tag to import it into our website.

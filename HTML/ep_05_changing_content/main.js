@@ -42,7 +42,7 @@ function get_text(){
     
     set the color to the new_color
   */
-	p_tag.style.color = new_color;
+	// p_tag.style.color = new_color;
 }
 
 function random(min, max){
