@@ -1,0 +1,31 @@
+body {
+	background-color: #faf4e1;
+	overflow: hidden; /* Remove scrollbars from the body tag */
+}
+
+#title {
+	color: rgb(129, 82, 149);
+	margin-bottom: 10px;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50% 50% / 50% 50%;
+}
+
+.center {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+p {
+	color: rgb(129, 82, 149);
+	font-weight: bold;
+	margin-top: 0px;
+}
