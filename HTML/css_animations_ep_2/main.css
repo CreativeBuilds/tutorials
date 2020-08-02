@@ -1,0 +1,67 @@
+/* These are our css variables */
+:root {
+  --background: #28243b;
+  --card: #423c5f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* Use css variables in replace of #28243b in multiple places */
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 50vw;
+  height: calc(50vw / 16 * 9);
+  position: relative;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: var(--card);
+}
+
+.card span {
+  position: absolute;
+  bottom: -0.75rem;
+  right: -0.75rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: var(--card);
+  opacity: 0.33;
+  animation: flow 1.5s ease-in-out alternate infinite;
+  z-index: -1;
+}
+
+.card span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.card span:nth-child(2) {
+  bottom: -1.5rem;
+  right: -1.5rem;
+}
+
+@keyframes flow {
+  0% {
+    transform: translate(0rem, 0rem);
+  }
+
+  100% {
+    transform: translate(5px, 5px);
+  }
+}

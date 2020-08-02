@@ -1,0 +1,123 @@
+Hey guys, what’s going on?
+
+You’re in for a surprise today as we welcome you to the first episode of our new series, CSS Animations. 
+
+This series was requested by DarkOwl and it’s gonna include some basic animations, how to create them, and some source code.
+
+If you have any ideas for future animations we can do, leave a comment and I’ll try to figure out how to do them and make a video about it in the future.
+
+An animation lets an element gradually change from one style to another. CSS allows animation of HTML elements without using JavaScript or Flash!
+
+You can change as many CSS properties you want, as many times you want.
+
+So in this tutorial, you will see me using CodeSandbox.IO which allows for super easy web development when trying out different designs.
+
+Here’s a preview of what we’ll be accomplishing after this episode.
+
+(show preview)
+
+Now let’s jump into the beginning of the whole process starting with creating the HTML structure.
+
+First we create a wrapping div for where our three dots would go in. 
+
+Do so by typing in <div id="wrapper">
+
+Now we add in the 3 children divs and give them each a class of box. So simply put 
+
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+And now let’s swap over to our CSS file. 
+
+You may notice that a part of our file has already been filled but these are just technically some boilerplate code to help us clean everything up although it's not really needed.
+
+The most important part is the body css where we set the webpage to take up the full screen and hide any overflow so we wouldn’t have any scroll bars.
+
+Here we create a reference to our div with the ID of "wrapper" by doing #wrapper.
+
+Stretch the element out to take the full width and height of the screen like we did with body. 
+
+Type in min-width: 100vw; and  min-height: 100vh;
+ Set the display to flex so we can center our content by using display: flex;
+  
+And add justify-content: center and align-items: center; in order to have our dots in the center of the screen
+
+Next we need to add css to the divs inside of our wrapper element, remember they have a class of .box so we write "#wrapper div.box"
+
+This space tells the CSS engine that we want to edit the CSS of all divs with the class of box that are also inside of the #wrapper element.
+
+So let’s set the width and height to be 3rem by putting width: 3rem; and height: 3rem;. 
+
+Rem is a sizing unit. If you wanna learn more about it, I put a link to extra reading material on CSS units in the description down below.
+
+Set the position to relative and add margin so we can have some space in between our dots.
+
+position: relative;  margin: 0 1rem 0 1rem;
+
+So far there are still no changes, so let's add a pseudo element and it will all start coming together.
+
+First up, here’s #wrapper div.box::after" where the double colon means that we’re accessing a pseudo element.
+
+Now set the content to be an empty string and the position to be absolute.
+
+Because the parent element has "position relative", this ties the pseudo element to its parent element no matter where it is on the screen.
+
+This here is important because it's what allows us to animate the dots flowing up and down.
+
+Set the background to a color you like. I'm going to use #87a7b3 which is sort of like a grayish blue shade.
+
+Let the height and width be 3rem both and border radius to be at 50% so that our square turns into a circle.
+
+So here we have an animation tag and we name it “wiggle” and let it last for 2 seconds. We set the timing function to be ease alternate and run it for an infinite number of times.
+
+(not sure if I wrote that correctly)
+
+And lastly we’ll set the opacity of this pseudo element to zero.
+
+So now it’s time to add the actual animation.
+
+Animations are made using the keyword "@keyframes and then the name-of-the-animation" in this case, wiggle. It contains different percentages which represent different points during the animation.
+
+Add a "0% then a pair of curly brackets and a "100% and another pair of curly brackets". The curly brackets are where we're going to put our css that will change over time.
+
+Inside the curly brackets for 0% set bottom to -1.5rem and opacity to 0;
+
+Inside the curly brackets for 100% set bottom to be 1.5rem and opacity to 1;
+
+And with that, we should now have our three dots bouncing side by side.
+
+It’s time to create our delay and add in different colors.
+
+To access the 2nd and 3rd box, we will copy the CSS selector that has our animation in it which is the #wrapper div.box::after
+
+Copy and paste that to a new line and add :nth-child(2) after .box. This selects the second "div.box" element within the #wrapper element.
+
+Add an animation-delay of 0.5s or 500ms and select a different background color if you want.
+
+Copy that and paste it again, change the 2 in nth-child(2) to a 3 to select the third element.
+
+Change the delay in the third element to be 1 second and change the background too if you want.
+
+If you save everything you have so far and reload the page now, you should see your three elements bouncing up and down. 
+
+Feel free to tweak different variables and experiment with what you can animate for instance the background color.
+
+And that’s it for now, let’s wrap up everything we did. To give a short run through, we looked at what CSS animations are and how to create some basic ones for your page.
+
+Thank you all for watching! I hope you have a wonderful rest of your day. 
+
+Stay tuned for more and don’t forget to join our community by subscribing or join the discord down below.
+
+And until the next episode, keep learning, keep coding.
+
+New tutorials come out 8pm Eastern Standard Time, Monday and Wednesday with Devlogs same time on Friday.
+
+
+
+
+
+
+
+
+
