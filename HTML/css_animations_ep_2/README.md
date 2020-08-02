@@ -40,6 +40,7 @@ Episode Overview
   - for the seocnd span element add the following
     - bottom -1.5rem and right -1.5rem
       - creates a second shadow
+- Feel free to add any extra content inside the card that you want as long as you add the content inside of the "card-content" element
 - Wrap up
     
   
